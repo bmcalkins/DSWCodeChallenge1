@@ -28,7 +28,7 @@ class ParseTests: XCTestCase {
     func testParseDocumentPriceTypes() {
         _  = sut.parse(document: document)
         let expectedPriceTypes = 3
-        let resultingPriceTypes = sut.priceTypes.count
+        let resultingPriceTypes = sut.priceSets.count
         XCTAssertEqual(expectedPriceTypes, resultingPriceTypes)
     }
 
